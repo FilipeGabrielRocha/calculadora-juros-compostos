@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Filipe Gabriel Rocha">
+    <meta name="keywords" content="juros, calculadora, vida adulta">
+    <meta name="description" content="Uma página que tem a funcionalidade de uma calculadora de juros compostos">
+
+    <link rel="shortcut icon" href="src/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Calculadora de Juros Compostos</title>
+</head>
+<body>
+    <main id="container">
+        <div id="calculator">
+            <h2>Calculadora de Juros Compostos</h2>
+            <div id="input_box">
+                <div class="input-field">
+                    <label for="value">Valor Inicial (capital):</label>
+                    <input type="number" name="value" id="value">
+                </div>
+
+                <div class="input-field">
+                    <label for="fee">Taxa de Juros a.m:</label>
+                    <input type="number" name="fee" id="fee">
+                </div>
+
+                <div class="input-field">
+                    <label for="time">Tempo de rendimento a.m:</label>
+                    <input type="number" name="time" id="time">
+                </div>
+            </div>
+
+            <div id="result">
+                <h4>Resultado:</h4>
+                <span id="total">
+                    R$ 0,00
+                </span>
+            </div>
+
+            <button id="calculate">Calcular</button>
+        </div>
+    </main>
+    
+    <script src="src/js/script.js"></script>
+</body>
+</html>

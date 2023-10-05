@@ -1,0 +1,93 @@
+:root {
+    --linearGradient: linear-gradient(90deg, #185db8, #1ab4f1, #16a35c);
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--linearGradient);
+    color: #d1d5db;
+}
+
+#calculator {
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+}
+
+#calculator h2::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 150px;
+    background: var(--linearGradient);
+    bottom: 5px;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #c8ced6;
+}
+
+.input-field input {
+    background-color: transparent;
+    border-bottom: 1px solid #185db8;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#total {
+    font-size: 40px;
+}
+
+#calculate {
+    border: 3px solid #262626 ;
+    background: var(--linearGradient);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#calculate:hover {
+    background: transparent;
+    border: 3px solid #185db8;
+}
